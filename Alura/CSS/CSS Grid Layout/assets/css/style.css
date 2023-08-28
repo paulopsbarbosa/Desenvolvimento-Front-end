@@ -1,0 +1,33 @@
+:root {
+  --gap : 3rem
+}
+
+.layout {
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-areas: "header header header" "main main aside" "footer footer footer";
+  grid-template-rows: 100px calc(100vh - 246px) 50px;
+}
+
+.grid {
+  background: #CDCDCD;
+}
+
+.grid-header {
+  grid-area: header;
+}
+
+.grid-main {
+  grid-area: main;
+  margin-left: var(--gap);
+}
+
+.grid-aside {
+  grid-area: aside;
+  margin-right: var(--gap);
+}
+
+.grid-footer {
+  grid-area: footer;
+}
+
